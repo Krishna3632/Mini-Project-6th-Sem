@@ -1,12 +1,73 @@
-🤖 AI Resume Analyzer + Job Match SystemA powerful NLP-based tool designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS).📖 Project OverviewThis project is an advanced Resume Analyzer that uses Natural Language Processing (NLP) to parse resumes and compare them against specific job descriptions (JD). It provides users with a match percentage, identifies missing skills, and offers actionable keyword suggestions to increase the chances of getting shortlisted.Project Status: 🚧 In Development🚀 Key Features📄 Resume Parsing: Extracts text and specific details from PDF/DOCX resumes.🎯 Job Description Matching: Compares the resume content against a provided Job Description using vectorization (e.g., TF-IDF or Cosine Similarity).📊 ATS Score: Calculates a compatibility score (0-100%) to indicate how well the resume fits the role.🔍 Skill Gap Analysis: Identifies critical skills mentioned in the JD that are missing from the resume.💡 Improvement Suggestions: Recommends specific keywords to add.🛠️ Tech StackLanguage: Python 3.xBackend Framework: FlaskNLP/AI: NLTK, Spacy, Scikit-learn (for text processing and similarity scoring)Frontend: React.js (Optional) or HTML/CSS/Jinja2 templatesPDF Processing: PyPDF2 or pdfminer🔄 Project Flow (How it Works)The system operates in the following sequential steps:Input: The user uploads their Resume (PDF/Doc) and pastes the text of the Job Description they are targeting.Text Extraction: The backend extracts raw text from the uploaded file and cleans it (removing special characters, stop words, etc.).Tokenization & NLP: Both the Resume and the JD are tokenized. The system identifies Named Entities (Skills, Experience, Education).Matching Algorithm: The system converts text to vectors and calculates the mathematical similarity between the Resume vector and the JD vector.Analysis: The difference between the two sets of keywords is analyzed to find "Missing Skills."Output: The user is presented with a Dashboard showing their Score, Match Analysis, and Recommendations.👥 Team Members & RolesPlease update the table below with your specific team details.NameRoleResponsibilities[Krishna Sharma - Leader]Team Lead / BackendRepo management, Flask API setup, System Architecture integration.[Shivam Shukla]AI/ML EngineerDeveloping the Resume Parsing logic, NLTK/Spacy implementation, and Scoring algorithm.[Pratyush Raghuvanshi]Frontend DevUI/UX Design, creating the file upload interface and results dashboard.[Vansh Bhardwaj]Documentation/QATesting the system with real resumes, bug fixing, and maintaining documentation.💻 Installation & SetupTo work on this project, please follow the Fork & Clone workflow:1. PrerequisitesEnsure you have Python 3.x and Git installed.2. Fork and CloneStep 1: Fork this repository to your own GitHub account.Step 2: Clone the forked repository to your local machine:Bashgit clone https://github.com/YOUR-USERNAME/ai-resume-analyzer.git
-cd ai-resume-analyzer
-3. Environment SetupCreate a virtual environment to keep dependencies organized:Bash# Windows
-python -m venv venv
-venv\Scripts\activate
+# 🤖 AI Resume Analyzer + Job Match System
 
-# Mac/Linux
-python3 -m venv venv
-source venv/bin/activate
-4. Install DependenciesBashpip install -r requirements.txt
-5. Run the ApplicationBashpython app.py
-The app should now be running at http://localhost:5000🤝 Contribution GuidelinesTo ensure a clean workflow, please follow these steps:Never push directly to main.Create a new branch for your feature: git checkout -b feature-name.Commit your changes: git commit -m "Added resume parsing logic".Push to your fork: git push origin feature-name.Open a Pull Request (PR) to the main repository for the Team Leader to review.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Flask](https://img.shields.io/badge/Framework-Flask-green)
+![NLP](https://img.shields.io/badge/AI-NLP-orange)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+
+**A powerful NLP-based tool designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS).**
+
+---
+
+## 📋 Table of Contents
+- [Project Overview](#-project-overview)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Project Architecture](#-project-architecture)
+- [Team Members](#-team-members--roles)
+- [Installation & Setup](#-installation--setup)
+- [Usage Guide](#-usage-guide)
+- [Contribution Guidelines](#-contribution-guidelines)
+
+---
+
+## 📖 Project Overview
+The **AI Resume Analyzer** is an advanced tool that uses Natural Language Processing (NLP) to parse resumes and compare them against specific job descriptions (JD). 
+
+In the modern recruitment landscape, companies use ATS software to filter candidates. This project mimics that process to help users understand their standing. It provides a match percentage, identifies missing critical skills, and offers actionable keyword suggestions to increase the chances of getting shortlisted.
+
+---
+
+## 🚀 Key Features
+* **📄 Smart Resume Parsing:** Automatically extracts text, contact details, and sections from PDF/DOCX resumes.
+* **🎯 Job Description Matching:** Vectorizes text to compare the resume against a provided JD using Cosine Similarity/TF-IDF.
+* **📊 ATS Compatibility Score:** Calculates a precise compatibility score (0-100%) indicating role fit.
+* **🔍 Skill Gap Analysis:** Highlights specific skills mentioned in the JD that are missing from the user's resume.
+* **💡 Smart Recommendations:** Suggests keywords and formatting improvements to boost the ATS score.
+
+---
+
+## 🛠️ Tech Stack
+* **Language:** Python 3.x
+* **Backend Framework:** Flask
+* **NLP & AI:** * `NLTK` (Natural Language Toolkit)
+    * `Spacy` (Entity Recognition)
+    * `Scikit-learn` (TF-IDF Vectorization & Similarity scoring)
+* **Frontend:** HTML5, CSS3, JavaScript (React.js optional)
+* **File Processing:** `PyPDF2`, `pdfminer`
+
+---
+
+## 🔄 Project Architecture
+The system follows a linear data processing pipeline:
+
+1.  **Input:** User uploads Resume (PDF) + Pastes Job Description.
+2.  **Preprocessing:** System cleans text (removes stop words, special characters, formatting).
+3.  **Tokenization:** Text is broken down into tokens; Named Entities (Skills, Org, Dates) are extracted.
+4.  **Vectorization:** Both texts are converted into numerical vectors.
+5.  **Matching:** Cosine similarity measures the angle between vectors to determine closeness.
+6.  **Output:** Dashboard displays Score, Missing Skills, and Tips.
+
+---
+
+## 👥 Team Members & Roles
+
+| Name | Role | Responsibilities |
+| :--- | :--- | :--- |
+| **Krishna Sharma** | **Team Lead / Backend** | Repo management, Flask API setup, System Architecture integration. |
+| **Shivam Shukla** | **AI/ML Engineer** | Developing the Resume Parsing logic, NLTK/Spacy implementation, and Scoring algorithm. |
+| **Pratyush Raghuvanshi** | **Frontend Dev** | UI/UX Design, creating the file upload interface and results dashboard. |
+| **Vansh Bhardwaj** | **Documentation/QA** | Testing the system with real resumes, bug fixing, and maintaining documentation. |
+
+---
+
