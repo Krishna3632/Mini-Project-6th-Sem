@@ -1,68 +1,16 @@
-# Under Construction Page
+# React + Vite
 
-A simple animated "under construction" landing page built with React, Vite, and Tailwind CSS.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- 🎨 Beautiful gradient background
-- ⚙️ Animated spinning gear icon
-- ✨ Pulsing text effects
-- 🎯 Bouncing loading dots
-- 📊 Animated progress bar
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Development
+## React Compiler
 
-Install dependencies:
-```bash
-npm install
-```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Run the development server:
-```bash
-npm run dev
-```
+## Expanding the ESLint configuration
 
-Build for production:
-```bash
-npm run build
-```
-
-Preview production build:
-```bash
-npm run preview
-```
-
-## Deploy to Vercel
-
-### Option 1: Using Vercel CLI
-
-1. Install Vercel CLI:
-```bash
-npm i -g vercel
-```
-
-2. Deploy:
-```bash
-vercel
-```
-
-3. Follow the prompts to deploy
-
-### Option 2: Using Vercel Dashboard
-
-1. Push your code to GitHub/GitLab/Bitbucket
-2. Go to [vercel.com](https://vercel.com)
-3. Click "Import Project"
-4. Select your repository
-5. Vercel will auto-detect the Vite configuration
-6. Click "Deploy"
-
-The `vercel.json` configuration file is already set up for optimal deployment.
-
-## Tech Stack
-
-- React 19.2
-- Vite 7.3
-- Tailwind CSS 4.1
-- PostCSS & Autoprefixer
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
