@@ -1,5 +1,5 @@
 import SectionTitle from "../components/section-title";
-import { BotIcon, BrainIcon, ZapIcon } from "lucide-react";
+import { FileTextIcon, TargetIcon, AlertCircleIcon, CheckCircleIcon, KeyIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -9,27 +9,37 @@ export default function Features() {
 
     const featuresData = [
         {
-            icon: BotIcon,
-            title: "Autonomous Agents",
-            description: "Agents that plan, execute & think step-by-step.",
+            icon: FileTextIcon,
+            title: "Resume Parsing",
+            description: "Extract skills, experience and tools from PDF/DOCX resumes.",
         },
         {
-            icon: BrainIcon,
-            title: "Memory & Learning",
-            description: "Agents retain memory and improve over time.",
+            icon: TargetIcon,
+            title: "Job Match Score",
+            description: "Compare resume with job description using semantic similarity.",
         },
         {
-            icon: ZapIcon,
-            title: "Real-time Execution",
-            description: "Fast responses with async task processing.",
+            icon: AlertCircleIcon,
+            title: "Missing Skills Detection",
+            description: "Identify what recruiters expect but your resume lacks.",
+        },
+        {
+            icon: CheckCircleIcon,
+            title: "ATS Compatibility Score",
+            description: "Estimate how likely your resume passes automated screening.",
+        },
+        {
+            icon: KeyIcon,
+            title: "Keyword Optimization",
+            description: "Suggest keywords to increase shortlisting chances.",
         }
     ];
 
     return (
         <section className="mt-32">
             <SectionTitle
-                title="Agent features"
-                description="Design AI assistants that research, plan, and execute tasks — all powered by your prompts."
+                title="Everything you need to pass ATS"
+                description="AI-powered analysis that gives you insights recruiters see — before you submit your application."
             />
 
             <div className="flex flex-wrap items-center justify-center gap-6 mt-10 px-6">

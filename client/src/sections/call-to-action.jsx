@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "lucide-react";
+import { UploadIcon } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function CallToAction() {
@@ -15,7 +15,7 @@ export default function CallToAction() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
             >
-                Ready to build?
+                Check Your Resume Before Recruiters Do
             </motion.h2>
             <motion.p className="mt-4 text-sm/7 max-w-md"
                 initial={{ y: 80, opacity: 0 }}
@@ -23,7 +23,7 @@ export default function CallToAction() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 200, damping: 70, mass: 1 }}
             >
-                See how fast you can turn your ideas into reality. Get started for free, no credit card required.
+                Get instant feedback on your resume's ATS compatibility and job match score. Know exactly what to improve before hitting submit.
             </motion.p>
             <motion.button className="btn glass transition-none flex items-center gap-2 mt-8"
                 initial={{ y: 80, opacity: 0 }}
@@ -31,8 +31,8 @@ export default function CallToAction() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
             >
-                Try now
-                <ArrowRightIcon className="size-4" />
+                <UploadIcon className="size-4" />
+                Upload Resume
             </motion.button>
         </motion.div>
     );

@@ -2,12 +2,10 @@ import LenisScroll from "./components/lenis-scroll";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import HeroSection from "./sections/hero-section";
-import FaqSection from "./sections/faq-section";
-import TrustedCompanies from "./sections/trusted-companies";
 import Features from "./sections/features";
 import WorkflowSteps from "./sections/workflow-steps";
-import Testimonials from "./sections/testimonials";
-import PricingPlans from "./sections/pricing-plans";
+import ExampleResult from "./sections/example-result";
+import TechStack from "./sections/tech-stack";
 import CallToAction from "./sections/call-to-action";
 
 export default function App() {
@@ -22,12 +20,10 @@ export default function App() {
             </div>
             <main className='px-4'>
                 <HeroSection />
-                <TrustedCompanies />
                 <Features />
                 <WorkflowSteps />
-                <Testimonials />
-                <FaqSection />
-                <PricingPlans />
+                <ExampleResult />
+                <TechStack />
                 <CallToAction />
             </main>
             <Footer />

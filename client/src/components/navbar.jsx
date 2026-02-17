@@ -8,10 +8,9 @@ export default function Navbar() {
 
     const links = [
         { name: 'Home', href: '/' },
-        { name: 'Agents', href: '#agents' },
-        { name: 'Use Cases', href: '#use-cases' },
-        { name: 'Pricing', href: '#pricing' },
-        { name: 'Docs', href: '#docs' }
+        { name: 'Features', href: '#features' },
+        { name: 'How It Works', href: '#how-it-works' },
+        { name: 'Tech Stack', href: '#tech' }
     ];
 
     useEffect(() => {
@@ -49,7 +48,7 @@ export default function Navbar() {
                         </a>
                     ))}
                     <a href='/' className='btn glass'>
-                        Sign Up
+                        Get Started
                     </a>
                 </div>
 
@@ -67,7 +66,7 @@ export default function Navbar() {
 
 
                 <a href='/' className='btn glass' onClick={() => setIsOpen(false)}>
-                    Sign Up
+                    Get Started
                 </a>
 
                 <button onClick={() => setIsOpen(false)} className='rounded-md p-2 glass'>
