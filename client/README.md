@@ -1,16 +1,79 @@
-# React + Vite
+# AI Resume Analyzer & Job Match System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern SaaS landing page for an AI-powered resume analysis tool that helps job seekers beat ATS filters and improve their chances of getting shortlisted.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Resume Parsing** - Extract skills, experience and tools from PDF/DOCX resumes
+- **Job Match Score** - Compare resume with job description using semantic similarity
+- **Missing Skills Detection** - Identify what recruiters expect but your resume lacks
+- **ATS Compatibility Score** - Estimate how likely your resume passes automated screening
+- **Keyword Optimization** - Suggest keywords to increase shortlisting chances
 
-## React Compiler
+## 🎨 Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Built with a clean, minimal, developer-portfolio quality design featuring:
+- Glassmorphism UI components
+- Smooth scroll animations with Framer Motion
+- Modern gradient backgrounds
+- Responsive design for all devices
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19.2, Vite 7.3
+- **Styling**: Tailwind CSS 4.1
+- **Animations**: Framer Motion
+- **Smooth Scroll**: Lenis
+- **Backend (Planned)**: Python, Flask, NLP, spaCy, scikit-learn
+
+## 📦 Installation
+
+```bash
+npm install
+```
+
+## 🏃 Development
+
+Run the development server:
+```bash
+npm run dev
+```
+
+Build for production:
+```bash
+npm run build
+```
+
+Preview production build:
+```bash
+npm run preview
+```
+
+## 🚢 Deployment
+
+Ready for Vercel deployment with pre-configured `vercel.json`.
+
+### Deploy with Vercel CLI:
+```bash
+npm i -g vercel
+vercel
+```
+
+### Deploy with Vercel Dashboard:
+1. Push code to GitHub
+2. Import project on [vercel.com](https://vercel.com)
+3. Deploy automatically
+
+## 📄 Sections
+
+1. **Hero Section** - Product tagline and primary CTA
+2. **Features** - 5 feature cards with glassmorphism design
+3. **How It Works** - 5-step timeline visualization
+4. **Example Result** - Dashboard preview with sample scores
+5. **Tech Stack** - Technology badges
+6. **CTA** - Final call-to-action
+
+## 📝 License
+
+MIT
+
